@@ -1,12 +1,11 @@
-int led1=2;
-int led2=3;
-int led3=4;
-int led4=5;
-int led5=6;
-int led6=7;
-int led7=8;
-int led8=9;
-int led9=10;
+#define led1 2
+#define led2 3
+#define led3 4
+#define led4 5
+#define led5 6
+#define led6 7
+#define led7 8
+#define led9 10
 
 
 void setup() {
@@ -23,7 +22,11 @@ pinMode(led9, OUTPUT);
 }
 
 void loop() {
- digitalWrite(led1, HIGH);
+ night(); 
+}
+
+void night(){
+  digitalWrite(led1, HIGH);
  delay(50);
  digitalWrite(led1, LOW);
   delay(50);
@@ -58,7 +61,7 @@ void loop() {
   digitalWrite(led9, HIGH);
  delay(50);
  digitalWrite(led9, LOW);
-  delay(50);
+ delay(50);
 
 
   digitalWrite(led8, HIGH);
@@ -88,5 +91,4 @@ void loop() {
   digitalWrite(led2, HIGH);
   delay(50);
  digitalWrite(led2, LOW);
- 
 }
